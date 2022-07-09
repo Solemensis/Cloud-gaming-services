@@ -86,19 +86,24 @@ button {
 .main button {
   height: 4.5rem;
   width: 16rem;
-  background-color: rgb(186, 0, 186);
+  background-color: rgb(22, 205, 80);
   position: relative;
 }
 .delivered {
   font-weight: 500;
   margin-top: 6rem;
+
+  /* background-color: #3cff0038;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-radius: 5rem; */
 }
 
 .delivered-span {
-  color: #ef1212;
+  color: #ff0000;
 }
 .main button:hover {
-  background-color: rgb(114, 0, 114);
+  background-color: rgb(15, 126, 0);
   cursor: pointer;
 }
 
