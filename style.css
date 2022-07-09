@@ -61,7 +61,7 @@ button {
 
 .main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   position: relative;
   align-items: center;
 
@@ -118,7 +118,7 @@ button {
   content: url(blob.svg);
   position: absolute;
   left: -57%;
-  top: -52.5%;
+  top: -51%;
   opacity: 0.6;
   width: 70rem;
   z-index: -1;
