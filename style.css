@@ -151,3 +151,13 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 75%;
+  }
+
+  button {
+    font-size: 1.3rem;
+  }
+}
