@@ -33,13 +33,11 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #1d1d21;
-  border-bottom: 2px #fe6f0b solid;
-  /* border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem; */
+  /* border-bottom: 2px #cfcfcf solid; */
 }
 .navbar img {
   padding: 1rem 0;
-  width: 6rem;
+  width: 5rem;
 }
 .navbar button {
   width: 10rem;
@@ -62,10 +60,36 @@ body {
   font-weight: 500;
   transition: 0.2s;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
 }
 .navbar ul li:hover {
-  color: #8a3ffc;
+  color: #a70ee9;
+}
+.misc-icons {
+  position: absolute;
+  left: 4%;
+  top: 29%;
+  display: grid;
+
+  gap: 14rem;
+  /* animation: float 4s infinite cubic-bezier(0.46, 0.03, 0.36, 0.98); */
+}
+
+.misc-icons img {
+  height: 4rem;
+}
+
+.misc-icons2 {
+  position: absolute;
+  left: 12%;
+  top: 41%;
+  display: grid;
+  /* animation: float 3s infinite cubic-bezier(0.46, 0.03, 0.36, 0.98); */
+  gap: 14rem;
+}
+
+.misc-icons2 img {
+  height: 4rem;
 }
 
 .main {
@@ -80,7 +104,7 @@ body {
   width: 40%;
   height: 68%;
   padding-left: 2rem;
-  border-left: 2px rgb(235, 255, 13) dashed;
+  border-left: 1px #cc36ee solid;
 }
 
 .main-text h2 {
@@ -97,31 +121,35 @@ body {
 .main button {
   height: 4.5rem;
   width: 16rem;
-  background-color: rgb(66, 17, 150);
+  background-color: #7209b7;
   position: relative;
   color: rgb(255, 255, 255);
 }
 
 .main button:hover {
-  background-color: rgb(49, 14, 109);
+  background-color: #4c087a;
   cursor: pointer;
 }
 
 .main-image {
-  height: 35rem;
+  height: 28rem;
+  /* transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+  animation: float 3s infinite alternate cubic-bezier(0.46, 0.03, 0.36, 0.98);
 }
+@keyframes float {
+  from {
+    margin-bottom: -2rem;
+  }
 
+  to {
+    margin-bottom: 4rem;
+  }
+}
+/* .main-image:hover {
+  transform: scale(1.1);
+} */
 .main-image-box {
   position: relative;
-}
-.main-image-box::before {
-  content: url(blob2.svg);
-  position: absolute;
-  left: -38%;
-  top: -51%;
-  opacity: 0.8;
-  width: 75rem;
-  z-index: -1;
 }
 
 .delivered {
@@ -134,7 +162,7 @@ body {
 }
 h1 {
   font-size: 5.5rem;
-  color: #47f00f;
+  color: #e82c87;
   margin-bottom: 3rem;
 }
 
@@ -171,4 +199,39 @@ button:hover {
   button {
     font-size: 1.3rem;
   }
+}
+
+.logos {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  bottom: -7%;
+  border-top: #cc36ee solid 1px;
+  padding-top: 1rem;
+}
+
+.tech-crunch {
+  height: 2.1rem !important;
+  margin-top: 1.5rem;
+}
+.logos img {
+  height: 5.5rem;
+  filter: contrast(0.3);
+  opacity: 0.6;
+}
+
+/* 
+*********************** */
+
+.services {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services-card {
+  font-size: 1.5rem;
+  color: white;
+  height: 5rem;
+  width: 5rem;
 }
