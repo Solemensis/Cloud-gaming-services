@@ -194,11 +194,11 @@ button:hover {
 
 @media (min-width: 1920px) {
   html {
-    font-size: 75%;
+    font-size: 81%;
   }
 
   button {
-    font-size: 1.3rem;
+    font-size: 1.45rem;
   }
 }
 
