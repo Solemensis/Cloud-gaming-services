@@ -26,6 +26,7 @@ body {
   height: 100vh;
   opacity: 0;
   transition: 2.5s;
+  margin-bottom: 12%;
 }
 
 .navbar {
@@ -60,7 +61,7 @@ body {
   font-weight: 500;
   transition: 0.2s;
   cursor: pointer;
-  color: #ffffff;
+  color: #dddddd;
 }
 .navbar ul li:hover {
   color: #a70ee9;
@@ -110,12 +111,12 @@ body {
 .main-text h2 {
   margin-bottom: 1rem;
   font-weight: 500;
-  color: white;
+  color: #eee;
 }
 
 .main-text p {
   margin-bottom: 3rem;
-  color: white;
+  color: #eee;
 }
 
 .main button {
@@ -176,7 +177,7 @@ h1 {
 button {
   background: transparent;
   border: none;
-  color: white;
+  color: #eee;
   background-color: orangered;
   opacity: 0.8;
   border-radius: 10rem;
@@ -227,11 +228,20 @@ button:hover {
 .services {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 12%;
 }
 
 .services-card {
   font-size: 1.5rem;
-  color: white;
-  height: 5rem;
-  width: 5rem;
+  color: #ddd;
+  height: 15rem;
+  width: 20rem;
+
+  border-radius: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.services-card img {
+  height: 4rem;
 }
