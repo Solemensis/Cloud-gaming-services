@@ -234,34 +234,85 @@ button:hover {
 .why-choose-us-section h2 {
   color: white;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 10rem;
   padding-bottom: 1rem;
+  font-weight: 500;
 }
 
 .cards {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+
   margin-bottom: 12%;
 }
 .cards img {
-  height: 5.5rem;
-  margin-bottom: 1.5rem;
+  height: 16rem;
+
+  margin-bottom: 3rem;
 }
 
 .cards h3 {
-  margin-bottom: 4rem;
+  font-weight: 500;
   font-size: 2rem;
+  text-align: end;
 }
-.why-choose-us-card {
-  font-size: 1.5rem;
-  color: #ddd;
-  height: 25rem;
-  width: 22rem;
+.cards p {
+  margin-bottom: 0.5rem;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  background-color: #ffb13488;
-  border-radius: 1rem;
-  padding: 2.5rem 1.5rem;
+}
+
+.why-choose-us-card {
+  font-size: 2rem;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ddd;
+  margin-bottom: 20rem;
+}
+
+.z-quotes {
+  /* border: rgba(166, 166, 166, 0.796) 2px solid; */
+  /* border-radius: 4rem; */
+  /* background-color: rgb(0, 0, 0); */
+
+  padding: 2rem;
+}
+
+.z-info {
+  padding: 2rem;
+  padding-top: 4rem;
+  height: 100%;
+  width: 40%;
+}
+
+.z-info h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.z-quotes-1 img {
+  padding-left: 1rem;
+}
+.z-quotes-2 img {
+  padding-left: 6.5rem;
+}
+.z-quotes-2 img {
+  padding-left: 6.5rem;
+}
+.z-quotes-3 img {
+  padding-left: 15rem;
+}
+
+.z-info-1 {
+  padding-left: 4rem;
+}
+.z-info-2 {
+  padding-right: 8rem;
+  padding-left: 0rem;
+}
+.z-info-3 {
+  padding-left: 1rem;
 }
