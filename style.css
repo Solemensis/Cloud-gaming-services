@@ -135,11 +135,11 @@ body {
 .main-image {
   height: 28rem;
   /* transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
-  animation: float 3s infinite alternate cubic-bezier(0.46, 0.03, 0.36, 0.98);
+  animation: float 1.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 @keyframes float {
   from {
-    margin-bottom: -2rem;
+    margin-bottom: -1rem;
   }
 
   to {
@@ -225,13 +225,13 @@ button:hover {
 /* 
 *********************** */
 
-.services {
+.why-choose-us-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 12%;
 }
 
-.services-card {
+.why-choose-us-card {
   font-size: 1.5rem;
   color: #ddd;
   height: 15rem;
@@ -242,6 +242,6 @@ button:hover {
   text-align: center;
 }
 
-.services-card img {
+.why-choose-us-section img {
   height: 4rem;
 }
