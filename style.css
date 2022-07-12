@@ -35,13 +35,17 @@ body {
   align-items: center;
   background-color: #1d1d21;
   /* border-bottom: 2px #cfcfcf solid; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .navbar img {
   padding: 1rem 0;
-  width: 5rem;
+  width: 4rem;
 }
 .navbar button {
-  width: 10rem;
+  width: 15rem;
 }
 .navbar button {
   height: 4rem;
@@ -55,6 +59,7 @@ body {
   width: 30vw;
   justify-content: space-evenly;
   list-style: none;
+  margin-left: 11rem;
 }
 .navbar ul li {
   font-size: 1.8rem;
@@ -94,6 +99,7 @@ body {
 }
 
 .main {
+  margin-top: 5.2%;
   display: flex;
   justify-content: space-around;
   position: relative;
@@ -225,23 +231,37 @@ button:hover {
 /* 
 *********************** */
 
-.why-choose-us-section {
+.why-choose-us-section h2 {
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 10rem;
+  padding-bottom: 1rem;
+}
+
+.cards {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 12%;
 }
+.cards img {
+  height: 5.5rem;
+  margin-bottom: 1.5rem;
+}
 
+.cards h3 {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
 .why-choose-us-card {
   font-size: 1.5rem;
   color: #ddd;
-  height: 15rem;
-  width: 20rem;
-
-  border-radius: 2rem;
-  padding: 1.5rem;
+  height: 25rem;
+  width: 22rem;
   text-align: center;
-}
-
-.why-choose-us-section img {
-  height: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  background-color: #ffb13488;
+  border-radius: 1rem;
+  padding: 2.5rem 1.5rem;
 }
