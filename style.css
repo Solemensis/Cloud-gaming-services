@@ -26,7 +26,7 @@ body {
   height: 100vh;
   opacity: 0;
   transition: 2.5s;
-  margin-bottom: 12%;
+  margin-bottom: 10%;
 }
 
 .navbar {
@@ -235,22 +235,20 @@ button:hover {
   color: white;
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   padding-bottom: 1rem;
   font-weight: 500;
 }
 
-.cards {
-  display: grid;
-
-  margin-bottom: 12%;
-}
 .cards img {
-  height: 16rem;
+  height: 19rem;
 
   margin-bottom: 3rem;
 }
 
+.knife {
+  height: 17rem !important;
+}
 .cards h3 {
   font-weight: 500;
   font-size: 2rem;
@@ -264,11 +262,15 @@ button:hover {
 .why-choose-us-card {
   font-size: 2rem;
   line-height: 1.5;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-items: center;
+
+  /* grid-column-gap: 10rem; */
+
   color: #ddd;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 .z-quotes {
@@ -283,36 +285,44 @@ button:hover {
   padding: 2rem;
   padding-top: 4rem;
   height: 100%;
-  width: 40%;
+  width: 70%;
 }
-
 .z-info h3 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 500;
 }
 
-.z-quotes-1 img {
-  padding-left: 1rem;
-}
-.z-quotes-2 img {
-  padding-left: 6.5rem;
-}
-.z-quotes-2 img {
-  padding-left: 6.5rem;
-}
-.z-quotes-3 img {
-  padding-left: 15rem;
+.z-info-2 {
+  padding-top: 8rem;
 }
 
-.z-info-1 {
-  padding-left: 4rem;
+.z-info-4 {
+  padding-top: 8rem;
 }
-.z-info-2 {
-  padding-right: 8rem;
-  padding-left: 0rem;
+
+.z-quotes-1 img {
+  margin-left: 1rem;
 }
-.z-info-3 {
-  padding-left: 1rem;
+.z-quotes-1 h3 {
+  margin-right: 1rem;
+}
+.z-quotes-2 img {
+  margin-left: 5.5rem;
+}
+.z-quotes-3 {
+  width: 70%;
+}
+.z-quotes-3 img {
+  margin-left: 8rem;
+}
+.z-quotes-3 h3 {
+  margin-right: 3.5rem;
+}
+.z-quotes-4 img {
+  margin-left: 1.5rem;
+}
+.z-quotes-4 h3 {
+  margin-right: 0.5rem;
 }
