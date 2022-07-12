@@ -270,7 +270,7 @@ button:hover {
   /* grid-column-gap: 10rem; */
 
   color: #ddd;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .z-quotes {
@@ -296,6 +296,9 @@ button:hover {
 
 .z-info-2 {
   padding-top: 8rem;
+}
+.z-info-3 {
+  padding-top: 11rem;
 }
 
 .z-info-4 {
@@ -325,4 +328,86 @@ button:hover {
 }
 .z-quotes-4 h3 {
   margin-right: 0.5rem;
+}
+
+.why-choose-us-section {
+  margin-bottom: 25rem;
+}
+/* 
+******************* */
+
+.pricing-section h2 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 12rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+.flex-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  color: white;
+  background-color: rgba(122, 63, 231, 0.24);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card h4 {
+  font-size: 2.5rem;
+  margin-bottom: 5.7rem;
+}
+
+.card:first-child h4 {
+  margin-bottom: 8.5rem;
+}
+
+.card:last-child h4 {
+  margin-bottom: 2.9rem;
+}
+.card:last-child {
+  background-color: rgba(42, 135, 79, 0.659);
+}
+.card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.card li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card li:last-child {
+  margin-bottom: 2rem;
+}
+
+.price-tag {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.card button {
+  padding: 0.5rem 1rem;
+  background-color: #a70ee9;
+  margin-left: 0.75rem;
+}
+.card:last-child button {
+  background-color: #c1901d;
+}
+.card:last-child button:hover {
+  background-color: #8e6913;
+}
+
+.card button:hover {
+  background-color: #810db3;
+}
+.pricing-section {
+  margin-bottom: 10%;
 }

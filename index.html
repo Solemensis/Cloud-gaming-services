@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <section class="hero-section">
@@ -67,15 +68,15 @@
       </div>
     </section>
     <section class="why-choose-us-section page-format">
-      <h2>Why You Should Choose Us?</h2>
+      <h2 data-aos="zoom-out">Why You Should Choose Us?</h2>
       <div class="cards">
         <div class="why-choose-us-card">
-          <div class="z-quotes z-quotes-1">
+          <div class="z-quotes z-quotes-1" data-aos="zoom-out">
             <img class="knife" src="images/knife.png" alt="" />
             <p>“It’s dangerous to go alone, take this!”</p>
             <h3>– The Legend of Zelda</h3>
           </div>
-          <div class="z-info z-info-1">
+          <div class="z-info z-info-1" data-aos="zoom-out">
             <h3>Macro-driven Stream Technology</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
@@ -86,45 +87,43 @@
           </div>
         </div>
         <div class="why-choose-us-card">
-          <div class="z-info z-info-2">
-            <h3>Optimized Latency Reduction</h3>
+          <div class="z-info z-info-2" data-aos="zoom-out">
+            <h3>Auto Optimized Latency</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus
               eligendi dolore blanditiis laudantium tenetur expedita, minima
               aliquam explicabo error sunt.
             </p>
           </div>
-          <div class="z-quotes z-quotes-2">
+          <div class="z-quotes z-quotes-2" data-aos="zoom-out">
             <img src="images/candle.png" alt="" />
             <p>“War… War never changes.”</p>
             <h3>– Fallout</h3>
           </div>
         </div>
         <div class="why-choose-us-card">
-          <div class="z-quotes z-quotes-3">
+          <div class="z-quotes z-quotes-3" data-aos="zoom-out">
             <img src="images/hat.png" alt="" />
             <p>“Love is just a chemical. We give it meaning by choice.”</p>
             <h3>– Bioshock 2</h3>
           </div>
-          <div class="z-info z-info-3">
+          <div class="z-info z-info-3" data-aos="zoom-out">
             <h3>Little To No Graphic Reduction</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo in
-              necessitatibus esse, est repellat voluptatum? Magni nulla eligendi
-              exercitationem eos ea odio nesciunt alias amet, accusamus nam
-              nostrum!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              numquam inventore saepe!
             </p>
           </div>
         </div>
         <div class="why-choose-us-card">
-          <div class="z-info z-info-4">
+          <div class="z-info z-info-4" data-aos="zoom-out">
             <h3>Affordable</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
               fugiat, temporibus velit possimus suscipit architecto cupiditate?
             </p>
           </div>
-          <div class="z-quotes z-quotes-4">
+          <div class="z-quotes z-quotes-4" data-aos="zoom-out">
             <img src="images/tomb.png" alt="" />
             <p>“You Have Died”</p>
             <h3>– Dark Souls</h3>
@@ -132,6 +131,48 @@
         </div>
       </div>
     </section>
+    <section class="pricing-section">
+      <h2 data-aos="zoom-out">Pricing</h2>
+      <div data-aos="zoom-out" class="flex-cards">
+        <div class="card">
+          <h3>Free</h3>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <h4 class="price-tag">$0.00</h4>
+          <button>Select This Plan</button>
+        </div>
+        <div class="card">
+          <h3>Weekly Sub</h3>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <h4 class="price-tag">$0.00</h4>
+          <button>Select This Plan</button>
+        </div>
+        <div class="card">
+          <h3>Monthly Sub</h3>
+          <ul>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+          </ul>
+          <h4 class="price-tag">$0.00</h4>
+          <button>Select This Plan</button>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   <script src="script.js"></script>
 </html>
