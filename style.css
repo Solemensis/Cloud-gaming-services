@@ -477,3 +477,32 @@ button:hover {
 .pricing-section {
   margin-bottom: 10%;
 }
+/* 
+************* */
+.footer {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  width: 100vw;
+  height: 6rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.socials {
+  position: absolute;
+  right: 5%;
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.insta {
+  width: 3.5rem;
+}
+.git {
+  width: 2.5rem;
+}
