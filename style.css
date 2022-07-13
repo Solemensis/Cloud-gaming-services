@@ -366,6 +366,10 @@ button:hover {
   font-size: 4rem;
 }
 
+.colored-span {
+  color: rgb(63, 254, 143);
+}
+
 .infos {
   width: 50rem;
 }
