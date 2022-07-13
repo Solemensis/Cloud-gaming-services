@@ -17,7 +17,14 @@ html {
   position: absolute;
   color: white;
   opacity: 0;
-  top: -7%;
+  top: -8.5%;
+}
+
+.ghost-div2 {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  top: -29%;
 }
 body {
   overflow-x: hidden;
@@ -394,6 +401,11 @@ button:hover {
 
 /* ************************ */
 
+.pricing-section {
+  margin-bottom: 10%;
+  position: relative;
+}
+
 .pricing-section h2 {
   color: white;
   text-align: center;
@@ -402,6 +414,15 @@ button:hover {
   padding-bottom: 1rem;
   font-weight: 500;
 }
+
+/* .pricing-section h2:before {
+  content: url(images/tabela.svg);
+  width: 3.5rem;
+
+  margin-right: 2rem;
+  margin-left: -3rem;
+  display: inline-block;
+} */
 
 .flex-cards {
   display: flex;
@@ -469,18 +490,16 @@ button:hover {
   margin-top: 6rem;
 }
 .card:last-child button {
-  background-color: #091509;
+  background-color: #1e192b;
 }
 .card:last-child button:hover {
-  background-color: #000000;
+  background-color: #444444;
 }
 
 .card button:hover {
   background-color: #810db3;
 }
-.pricing-section {
-  margin-bottom: 10%;
-}
+
 /* 
 ************* */
 .footer {
