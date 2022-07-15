@@ -112,14 +112,14 @@ body {
   bottom: 45%;
   left: -4%;
   height: 5rem;
-  animation: float2 4s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation: float2 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 .misc-2 {
   position: absolute;
   bottom: 15%;
   right: -4%;
   height: 5rem;
-  animation: float3 4s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation: float3 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .main {
