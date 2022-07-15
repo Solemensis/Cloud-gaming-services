@@ -223,11 +223,18 @@ button:hover {
 
 @media (min-width: 1920px) {
   html {
-    font-size: 78%;
+    font-size: 80.85%;
+  }
+  .z-info-1-heading {
+    font-size: 2.34rem !important;
   }
 
   button {
     font-size: 1.45rem;
+  }
+  .premium::before {
+    top: -40.5% !important;
+    right: -25% !important;
   }
 }
 
@@ -417,6 +424,24 @@ button:hover {
 
 /* ************************ */
 
+.have-time-with {
+  color: #eee;
+  text-align: center;
+  font-size: 2.8rem;
+}
+.games-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.games-grid img {
+  transform: rotate(90deg);
+  width: 20rem;
+  filter: invert(77%) sepia(87%) saturate(0%) hue-rotate(316deg) brightness(93%)
+    contrast(104%);
+}
+
+/* ************************* */
 .pricing-section {
   margin-bottom: 10%;
   position: relative;
