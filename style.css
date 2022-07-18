@@ -256,7 +256,7 @@ button:hover {
   html {
     font-size: 80.85%;
   }
-  .z-info-1-heading {
+  .info-heading1 {
     font-size: 2.34rem !important;
   }
 
@@ -319,6 +319,21 @@ button:hover {
   margin-bottom: 8rem;
 }
 
+.info-heading {
+  border-bottom: 2px #3ac9d6b3 solid;
+}
+.game-name1 {
+  color: #6ddd17b3;
+}
+.game-name2 {
+  color: #eee152b3;
+}
+.game-name3 {
+  color: #b217ddb3;
+}
+.game-name4 {
+  color: #dd4c17b3;
+}
 .z-quotes {
   /* border: rgba(166, 166, 166, 0.796) 2px solid; */
   /* border-radius: 4rem; */
@@ -475,17 +490,17 @@ button:hover {
 }
 .cam {
   position: absolute;
-  right: 9.7%;
+  right: 10.3%;
   top: 51%;
 
-  width: 2.2rem !important;
+  width: 1.7rem !important;
 }
 .cam2 {
   position: absolute;
   right: 49%;
   top: 14.3%;
 
-  width: 2rem !important;
+  width: 2.1rem !important;
 }
 .line {
   height: 28px;
@@ -558,7 +573,7 @@ button:hover {
 .card {
   color: white;
 
-  background-color: #6334bb57;
+  background-color: #6c30db67;
   padding: 2rem 3rem;
   position: relative;
   border-radius: 1rem;
@@ -599,6 +614,7 @@ button:hover {
 .card2 li:before {
   content: url(images/arrow.svg);
 }
+
 .card li:last-child {
   margin-bottom: 2rem;
 }
