@@ -199,7 +199,7 @@ body {
 h1 {
   font-size: 5.5rem;
   /* color: #e82c87; */
-  color: #f6489c;
+  color: #f73693;
   margin-bottom: 3rem;
 }
 
@@ -319,9 +319,9 @@ button:hover {
   margin-bottom: 8rem;
 }
 
-.info-heading {
+/* .info-heading {
   border-bottom: 2px #3ac9d6b3 solid;
-}
+} */
 .game-name1 {
   color: #6ddd17aa;
 }
