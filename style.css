@@ -479,14 +479,16 @@ button:hover {
 .device1 {
   filter: invert(57%) sepia(74%) saturate(1906%) hue-rotate(291deg)
     brightness(93%) contrast(73%);
+  opacity: 0.9;
 }
 .device2 {
   filter: invert(54%) sepia(74%) saturate(445%) hue-rotate(314deg)
     brightness(109%) contrast(88%);
+  opacity: 0.8;
 }
 .tablet {
   width: 60rem !important;
-
+  opacity: 0.7;
   filter: invert(38%) sepia(88%) saturate(417%) hue-rotate(84deg)
     brightness(103%) contrast(80%);
 }
