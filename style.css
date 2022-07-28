@@ -172,6 +172,7 @@ body {
 
 .main-image {
   height: 28rem;
+
   /* transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
   animation: float 1.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
@@ -455,10 +456,30 @@ button:hover {
   text-align: center;
   font-size: 2.7rem;
   margin-bottom: 25rem;
+  /* background-color: #938a8a33; */
+  /* border-radius: 2rem; */
+  padding-top: 2.5rem;
+  padding-bottom: 9rem;
 }
 
-.have-time-with h2 {
+.png-fonts {
+  width: 9rem;
+  margin-left: -3.5rem;
+  filter: invert(100%);
+}
+.slim-font {
+  margin-left: -4.5rem;
+  margin-right: -1.2rem;
+}
+
+.heading {
   margin-bottom: -6rem;
+  margin-left: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.tonight {
+  display: flex;
 }
 .games-group {
   position: relative;
