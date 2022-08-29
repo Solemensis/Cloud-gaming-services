@@ -61,7 +61,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar a:link,
@@ -454,8 +454,27 @@ button:hover {
 
 /* ************************ */
 
+.blob {
+  position: absolute;
+
+  width: 42rem !important;
+  height: 25rem;
+  opacity: 0.1;
+  left: 50%;
+  top: 64%;
+  transform: translate(-50%, -50%);
+}
+
+.blob1 {
+}
+.blob2 {
+}
+.blob3 {
+  width: 70rem !important;
+}
 .have-time-with {
   color: #eee;
+
   text-align: center;
   font-size: 2.7rem;
   margin-bottom: 25rem;
