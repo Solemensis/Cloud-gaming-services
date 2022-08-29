@@ -32,7 +32,9 @@ body {
   /* background-color: #212127; */
   /* background-color: #26262b; */
   /* background-color:  #1A1A1B; bu "the odin project" gece modu */
+
   background-color: #29292f;
+  /* background-image: linear-gradient(to right, #29292f, #37373e); */
 
   /* background-image: linear-gradient(to left, #16161a, #29292f); */
 }
