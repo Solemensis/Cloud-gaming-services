@@ -722,4 +722,5 @@ button:hover {
 
 .solid-divider {
   color: #585858;
+  width: 1px !important;
 }
