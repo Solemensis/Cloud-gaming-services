@@ -143,7 +143,7 @@ body {
 }
 .main-text {
   width: 40%;
-  height: 68%;
+
   padding-left: 2rem;
   border-left: 1px #cc36ee solid;
 }
@@ -257,7 +257,25 @@ button:hover {
 *********************** */
 /* responsive */
 
-@media (min-width: 1920px) {
+@media (min-width: 2500px) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 2499px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 2300px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 2100px) {
   html {
     font-size: 80.85%;
   }
@@ -268,21 +286,116 @@ button:hover {
   button {
     font-size: 1.45rem;
   }
-  .premium::before {
-    top: -40.5% !important;
-    right: -25% !important;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 77%;
   }
 }
 
+@media (max-width: 1820px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1720px) {
+  html {
+    font-size: 66%;
+  }
+}
+
+@media (max-width: 1580px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 44%;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 39%;
+  }
+}
+@media (max-width: 880px) {
+  html {
+    font-size: 34%;
+  }
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 26%;
+  }
+
+  .page-format {
+    width: 95%;
+  }
+
+  .main-text {
+    width: 65%;
+  }
+  /* .main-image {
+    display: none;
+  } */
+  .navbar {
+    position: static;
+    height: 15rem;
+  }
+  .navbar img {
+    width: 8rem;
+  }
+  .navbar ul {
+    margin-right: 10rem;
+  }
+  .navbar ul li {
+    font-size: 4rem;
+    font-family: "Patrick Hand SC";
+  }
+  .navbar button {
+    border-radius: 0.7rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+  }
+  .navbar p {
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .games-list {
+    display: none;
+  }
+
+  .anywhere-img1 {
+    width: 25rem !important;
+  }
+  .anywhere-img2,
+  .anywhere-img3 {
+    display: none;
+  }
+}
 /* ***************** */
 
 .why-choose-us-section h2 {
   color: white;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 12rem;
   padding-bottom: 1rem;
   font-weight: 500;
+  font-family: "Patrick Hand SC";
 }
 
 .cards img {
@@ -300,13 +413,13 @@ button:hover {
   text-align: end;
 }
 
-.premium::before {
+/* .premium::before {
   transform: scale(0.2);
   right: -40%;
   top: -52.5%;
   position: absolute;
   content: url(images/pumpkin.png);
-}
+} */
 .cards p {
   margin-bottom: 0.5rem;
   text-align: center;
@@ -324,9 +437,11 @@ button:hover {
   margin-bottom: 8rem;
 }
 
-/* .info-heading {
-  border-bottom: 2px #3ac9d6b3 solid;
-} */
+.info-heading {
+  /* font-family: "Patrick Hand SC";
+  font-size: 3.1rem !important;
+  font-weight: 800; */
+}
 .game-name1 {
   color: #6ddd17aa;
 }
@@ -597,10 +712,11 @@ button:hover {
 .pricing-section h2 {
   color: white;
   text-align: center;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 12rem;
   padding-bottom: 1rem;
   font-weight: 500;
+  font-family: "Patrick Hand SC";
 }
 
 /* .pricing-section h2:before {
@@ -723,4 +839,12 @@ button:hover {
 .solid-divider {
   color: #585858;
   width: 1px !important;
+}
+
+.tonight-text {
+  font-family: "Patrick Hand SC";
+  font-size: 8rem;
+  background: -webkit-linear-gradient(left, #4776e6, #8e54e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
