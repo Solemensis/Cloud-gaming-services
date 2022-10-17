@@ -1,5 +1,5 @@
 # [Landing-Page] Cloud Gaming Services
- another example landing page - https://solemensis.github.io/Cloud-Gaming-Services/
+ another example landing page - https://solemensis.github.io/cloud-gaming-services/
  
  
  
