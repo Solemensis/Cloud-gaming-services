@@ -13,6 +13,84 @@ html {
   font-family: "rubik", sans-serif;
 }
 
+.shape__bg {
+  position: fixed;
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  opacity: 0.4;
+  z-index: -10000000000;
+}
+
+.shape__small,
+.shape__big {
+  position: absolute;
+  background-color: rgb(95, 13, 98);
+  /* filter: blur(96px); */
+  filter: blur(7px);
+  z-index: -100000000000;
+  border-radius: 2%;
+
+  width: 2rem;
+  height: 70vh;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.shape__big {
+  /* width: 17rem;
+  height: 17rem; */
+  left: 5rem;
+  /*top: 12rem; */
+  background-color: rgb(95, 112, 10);
+
+  opacity: 0.5;
+  animation: turn 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.shape__small {
+  background-color: rgb(38, 131, 91);
+
+  /* width: 11rem;
+  height: 11rem; */
+  opacity: 0.5;
+  right: 5rem;
+  /*bottom: 20rem; */
+  animation: turn2 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+@keyframes turn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes turn2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(22, 8%, 10%);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: hsl(22, 8%, 15%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(22, 8%, 20%);
+}
+
 .ghost-div {
   position: absolute;
   color: white;
@@ -46,7 +124,7 @@ body {
 .hero-section {
   height: 100vh;
   opacity: 0;
-  transition: 2.5s;
+
   margin-bottom: 10%;
 }
 
@@ -64,10 +142,6 @@ body {
   z-index: 1000;
 }
 
-.navbar a:link,
-.navbar a:active {
-  text-decoration: none;
-}
 .navbar img {
   padding: 1rem 0;
   width: 4rem;
@@ -90,7 +164,8 @@ body {
   margin-left: 11rem;
 }
 .navbar ul li {
-  font-size: 1.8rem;
+  font-family: "Patrick Hand SC";
+  font-size: 2.4rem;
   font-weight: 500;
   transition: 0.2s;
   cursor: pointer;
@@ -108,6 +183,7 @@ body {
     margin-bottom: -15rem;
   }
 }
+
 @keyframes float3 {
   from {
     margin-bottom: -1rem;
@@ -160,23 +236,39 @@ body {
 }
 
 .main button {
-  height: 4.5rem;
-  width: 16rem;
-  background-color: #7209b7;
-  position: relative;
-  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+  margin: 10px;
+  padding: 1.3rem 3.2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+
+  border-radius: 10px;
+  display: block;
+}
+a {
+  text-decoration: none !important;
 }
 
 .main button:hover {
-  background-color: #4c087a;
-  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
 .main-image {
   height: 28rem;
 
   /* transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
-  animation: float 1.8s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation: floatNew 2.6s infinite alternate
+    cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 @keyframes float {
@@ -186,6 +278,16 @@ body {
 
   to {
     margin-bottom: 4rem;
+  }
+}
+
+@keyframes floatNew {
+  from {
+    transform: translateY(-1rem);
+  }
+
+  to {
+    transform: translateY(2rem);
   }
 }
 
@@ -330,7 +432,7 @@ button:hover {
 }
 @media (max-width: 880px) {
   html {
-    font-size: 34%;
+    font-size: 32%;
   }
 }
 
@@ -338,13 +440,48 @@ button:hover {
   html {
     font-size: 26%;
   }
+  .main {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 
+  .misc-1 {
+    display: none;
+  }
   .page-format {
     width: 95%;
   }
 
   .main-text {
-    width: 65%;
+    width: 80%;
+    border: none;
+    text-align: center;
+  }
+  .main-text h1 {
+    font-size: clamp(2ch, 8vw, 11ch);
+    margin-bottom: 5rem;
+  }
+  .main-text h2 {
+    font-size: clamp(2ch, 4vw, 5.5ch);
+    margin-bottom: 2rem;
+  }
+  .main-text p {
+    font-size: clamp(2.2ch, 2.8vw, 3.8ch);
+    margin-bottom: 5rem;
+    line-height: 140%;
+  }
+  .delivered {
+    display: none;
+  }
+  .main-text button {
+    width: clamp(27rem, 20vw, 35rem);
+    height: 7rem;
+    font-size: 3rem;
+    margin-inline: auto;
+  }
+
+  .main-image {
+    height: 45rem;
   }
   /* .main-image {
     display: none;
@@ -361,7 +498,6 @@ button:hover {
   }
   .navbar ul li {
     font-size: 4rem;
-    font-family: "Patrick Hand SC";
   }
   .navbar button {
     border-radius: 0.7rem;
@@ -548,6 +684,10 @@ button:hover {
 .infos {
   width: 50rem;
 }
+/* .infos h3 {
+  font-family: "Patrick Hand SC";
+  font-size: 6rem;
+} */
 .play-anywhere p {
   font-size: 1.8rem;
   line-height: 3.5rem;
@@ -589,7 +729,7 @@ button:hover {
 }
 .have-time-with {
   color: #eee;
-
+  position: relative;
   text-align: center;
   font-size: 2.7rem;
   margin-bottom: 25rem;
