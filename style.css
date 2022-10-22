@@ -37,6 +37,8 @@ html {
   height: 70vh;
   top: 50%;
   transform: translate(0, -50%);
+}
+.ananza {
   display: none;
 }
 .shape__small-pc,
@@ -948,6 +950,9 @@ button:hover {
 }
 
 @media (orientation: portrait) {
+  .knife {
+    height: 15rem !important;
+  }
   html {
     font-size: 26%;
   }
