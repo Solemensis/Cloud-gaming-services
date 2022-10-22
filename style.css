@@ -36,8 +36,42 @@ html {
   height: 70vh;
   top: 50%;
   transform: translate(0, -50%);
+  display: none;
 }
+.shape__small-pc,
+.shape__big-pc {
+  position: absolute;
+  background-color: rgb(95, 13, 98);
+  /* filter: blur(96px); */
+  filter: blur(7px);
+  z-index: -100000000000;
+  border-radius: 2%;
 
+  width: 2rem;
+  height: 70vh;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.shape__small-pc {
+  background-color: rgb(38, 131, 91);
+
+  /* width: 11rem;
+  height: 11rem; */
+  opacity: 0.5;
+  right: 5rem;
+  /*bottom: 20rem; */
+  animation: turn2 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.shape__big-pc {
+  /* width: 17rem;
+  height: 17rem; */
+  left: 5rem;
+  /*top: 12rem; */
+  background-color: rgb(95, 112, 10);
+
+  opacity: 0.5;
+  animation: turn 5s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
 .shape__big {
   /* width: 17rem;
   height: 17rem; */
@@ -288,11 +322,11 @@ a {
 
 @keyframes floatNew {
   from {
-    transform: translateY(-1rem);
+    transform: translateY(-3.5rem);
   }
 
   to {
-    transform: translateY(2rem);
+    transform: translateY(-1.5rem);
   }
 }
 
@@ -918,10 +952,12 @@ button:hover {
   }
   .main {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
   }
-
+  .hero-section {
+    margin-bottom: 20% !important;
+  }
   .misc-1 {
     display: none;
   }
@@ -1027,7 +1063,7 @@ button:hover {
   } */
   .navbar {
     position: static;
-    height: 15rem;
+    height: 11rem;
   }
   .navbar img {
     width: 8rem;
@@ -1060,8 +1096,13 @@ button:hover {
     left: 50%;
     transform: translate(-50%, 0);
     filter: blur(3px) !important;
+    display: block;
   }
 
+  .shape__small-pc,
+  .shape__big-pc {
+    display: none;
+  }
   .shape__big {
     top: -2rem;
   }
@@ -1074,7 +1115,7 @@ button:hover {
   }
 
   .shape1-2 {
-    top: -5rem !important;
+    top: -8rem !important;
     /* transform: translate(-50%, 80rem) !important; */
     width: 100% !important;
     animation: turn 2.6s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
@@ -1083,7 +1124,7 @@ button:hover {
     margin-left: 1.3rem;
   }
   .shape1-1 {
-    top: -7rem !important;
+    top: -10rem !important;
     /* transform: translate(-50%, 55rem) !important; */
     width: 100% !important;
     animation: turn2 2.6s infinite alternate
