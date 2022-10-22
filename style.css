@@ -645,6 +645,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  width: 70%;
 }
 
 .z-info {
@@ -652,6 +653,10 @@ button:hover {
   padding-top: 4rem;
   height: 100%;
   width: 70%;
+  vertical-align: baseline;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .z-info h3 {
   font-size: 2.4rem;
