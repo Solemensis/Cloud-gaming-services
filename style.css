@@ -19,7 +19,7 @@ html {
   height: 110vh;
   object-fit: cover;
   mix-blend-mode: soft-light;
-  opacity: 0.4;
+  opacity: 0.3;
   z-index: -10000000000;
 }
 
@@ -473,11 +473,54 @@ button:hover {
   .delivered {
     display: none;
   }
+
+  .flex-cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+  hr {
+    display: none;
+  }
+  .card {
+    width: 35%;
+    height: 45rem !important;
+  }
+  .card h3 {
+    font-size: 3.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .price-tag {
+    font-size: 4rem !important;
+  }
+  .card button {
+    height: 5rem;
+    width: 65% !important;
+    font-size: 2.2rem;
+  }
+  .card ul li {
+    font-size: 2.3rem;
+  }
+  .footer p {
+    width: 60%;
+  }
+  .pricing-section h2 {
+    font-size: 8rem !important;
+  }
+  .tonight-text {
+    font-size: 10rem !important;
+  }
   .main-text button {
     width: clamp(27rem, 20vw, 35rem);
     height: 7rem;
     font-size: 3rem;
     margin-inline: auto;
+  }
+  .infos h3 {
+    font-size: 4.5wrem !important;
+  }
+  .infos p {
+    font-size: 2rem !important;
   }
 
   .main-image {
@@ -520,6 +563,9 @@ button:hover {
   .anywhere-img2,
   .anywhere-img3 {
     display: none;
+  }
+  .why-choose-us-section h2 {
+    font-size: 6rem !important;
   }
 }
 /* ***************** */
@@ -568,6 +614,7 @@ button:hover {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   justify-items: center;
+  align-items: center;
 
   color: #ddd;
   margin-bottom: 8rem;
@@ -594,7 +641,9 @@ button:hover {
   /* border: rgba(166, 166, 166, 0.796) 2px solid; */
   /* border-radius: 4rem; */
   /* background-color: rgb(0, 0, 0); */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
 }
 
@@ -611,7 +660,7 @@ button:hover {
   font-weight: 500;
 }
 
-.z-info-1 {
+/* .z-info-1 {
   padding-top: 6rem;
 }
 .z-info-2 {
@@ -623,9 +672,9 @@ button:hover {
 
 .z-info-4 {
   padding-top: 8rem;
-}
+} */
 
-.z-quotes-1 img {
+/* .z-quotes-1 img {
   margin-left: 1rem;
 }
 .z-quotes-1 h3 {
@@ -649,7 +698,7 @@ button:hover {
 }
 .z-quotes-4 h3 {
   margin-right: 0.5rem;
-}
+} */
 
 .why-choose-us-section {
   margin-bottom: 25rem;
