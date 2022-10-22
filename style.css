@@ -440,7 +440,7 @@ button:hover {
 
 .z-info {
   padding: 2rem;
-  padding-top: 4rem;
+
   height: 100%;
   width: 70%;
   vertical-align: baseline;
@@ -1020,7 +1020,7 @@ button:hover {
 
   .main-image {
     height: 34rem;
-    margin-left: 2.6rem;
+    margin-left: 2.1rem;
   }
   /* .main-image {
     display: none;
@@ -1059,6 +1059,7 @@ button:hover {
     height: 2rem;
     left: 50%;
     transform: translate(-50%, 0);
+    filter: blur(3px) !important;
   }
 
   .shape__big {
@@ -1073,21 +1074,23 @@ button:hover {
   }
 
   .shape1-2 {
-    bottom: 0 !important;
-    transform: translate(-50%, 80rem) !important;
-    width: 60% !important;
+    top: -5rem !important;
+    /* transform: translate(-50%, 80rem) !important; */
+    width: 100% !important;
     animation: turn 2.6s infinite alternate cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
     height: 2rem !important;
     filter: blur(2px);
+    margin-left: 1.3rem;
   }
   .shape1-1 {
-    bottom: 0 !important;
-    transform: translate(-50%, 55rem) !important;
-    width: 60% !important;
+    top: -7rem !important;
+    /* transform: translate(-50%, 55rem) !important; */
+    width: 100% !important;
     animation: turn2 2.6s infinite alternate
       cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
     height: 2rem !important;
     filter: blur(2px);
+    margin-left: 1.3rem;
   }
   .anywhere-img1 {
     width: 25rem !important;
