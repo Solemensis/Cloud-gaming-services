@@ -23,7 +23,9 @@ html {
   opacity: 0.3;
   z-index: -10000000000;
 }
-
+.tomb {
+  height: 24rem !important;
+}
 .shape__small,
 .shape__big {
   position: absolute;
@@ -325,11 +327,11 @@ a {
 
 @keyframes floatNew {
   from {
-    transform: translateY(-3.5rem);
+    transform: translateY(-2rem);
   }
 
   to {
-    transform: translateY(-1.5rem);
+    transform: translateY(1rem);
   }
 }
 
@@ -950,6 +952,15 @@ button:hover {
 }
 
 @media (orientation: portrait) {
+  @keyframes floatNew {
+    from {
+      transform: translateY(-3.5rem);
+    }
+
+    to {
+      transform: translateY(-1.5rem);
+    }
+  }
   .knife {
     height: 15rem !important;
   }
