@@ -1,8 +1,8 @@
 # [Landing-Page] Cloud Gaming Services
- Landing page example - https://solemensis.github.io/cloud-gaming-services/
+Landing page of a digital product - https://solemensis.github.io/cloud-gaming-services/
  
  
  
- - Responsive
- - No framework or preprocessor used
+ - Responsive.
+ - No framework or preprocessor used.
  
