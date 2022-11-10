@@ -53,7 +53,7 @@ html {
   border-radius: 2%;
 
   width: 2rem;
-  height: 70vh;
+  height: 80vh;
   top: 50%;
   transform: translate(0, -50%);
 }
@@ -651,11 +651,12 @@ button:hover {
   display: flex;
   height: 35rem;
   justify-content: space-around;
-  margin-bottom: -3rem;
+  margin-bottom: -11rem;
+  align-items: center;
 }
 
 .games-flex img {
-  width: 45rem;
+  width: 40rem;
 }
 .device1 {
   filter: invert(57%) sepia(74%) saturate(1906%) hue-rotate(291deg)
@@ -668,58 +669,58 @@ button:hover {
   opacity: 0.8;
 }
 .tablet {
-  width: 60rem !important;
+  width: 45rem !important;
   opacity: 0.7;
   filter: invert(38%) sepia(88%) saturate(417%) hue-rotate(84deg)
     brightness(103%) contrast(80%);
 }
 .cam {
   position: absolute;
-  right: 10.3%;
-  top: 51%;
+  right: 10.1%;
+  top: 57%;
 
   width: 1.7rem !important;
 }
 .cam2 {
   position: absolute;
-  right: 49%;
-  top: 14.3%;
+  right: 48%;
+  top: 11%;
 
-  width: 2.1rem !important;
+  width: 1.9rem !important;
 }
 .line {
-  height: 28px;
+  height: 35px;
 
   transform: rotate(90deg);
   position: absolute;
   right: -37.85%;
-  top: 59%;
+  top: 40%;
 
   z-index: 78798767657;
 }
 .video1 {
-  width: 31.4rem;
-  height: 17.7rem;
+  width: 27.8rem;
+  height: 15.8rem;
   left: 15.2%;
-  top: 39%;
+  top: 29.9%;
   filter: brightness(0.9);
   object-fit: cover;
   /* object-fit: fill; */
 }
 .video2 {
-  width: 31.4rem;
-  height: 17.7rem;
-  right: 15.2%;
-  top: 39%;
+  width: 27.8rem;
+  height: 15.8rem;
+  left: 15.2%;
+  top: 29.9%;
   filter: brightness(1.2);
   object-fit: cover;
   /* object-fit: fill; */
 }
 .video3 {
-  width: 46.1rem;
-  height: 27.8rem;
-  left: 10.99%;
-  top: 20.2%;
+  width: 34.5rem;
+  height: 20.9rem;
+  left: 11%;
+  top: 16.4%;
   border-radius: 0.6rem;
   filter: brightness(1.15);
   object-fit: cover;
