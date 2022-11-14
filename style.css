@@ -227,11 +227,11 @@ body {
 }
 @keyframes float2 {
   from {
-    margin-bottom: -1rem;
+    transform: translateY(0);
   }
 
   to {
-    margin-bottom: -15rem;
+    transform: translateY(20rem);
   }
 }
 
@@ -349,6 +349,7 @@ a {
 .delivered {
   font-weight: 500;
   margin-top: 6rem;
+  color: #ddd;
 }
 
 .delivered-span {
@@ -357,15 +358,17 @@ a {
 h1 {
   font-size: 5.5rem;
   /* color: #e82c87; */
-  color: #f73693;
+  color: #f6449a;
   margin-bottom: 3rem;
 }
 
 .main h2 {
   font-size: 2.3rem;
+  color: #eee;
 }
 .main p {
   font-size: 1.7rem;
+  color: #ddd;
 }
 
 button {
@@ -499,6 +502,9 @@ button:hover {
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 500;
+}
+.z-info p {
+  color: #999;
 }
 
 /* .z-info-1 {
