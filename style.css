@@ -312,14 +312,16 @@ body {
   border-radius: 10px;
   display: block;
 }
-a {
-  text-decoration: none !important;
-}
-
 .main button:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
+}
+.main button:active {
+  animation: button-pop 0.3s ease-out;
+}
+a {
+  text-decoration: none !important;
 }
 
 .main-image {
@@ -396,7 +398,13 @@ button {
 button:hover {
   cursor: pointer;
 }
-
+.logooimg {
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+}
 .logos {
   position: absolute;
   display: flex;
@@ -859,7 +867,7 @@ button:hover {
   width: 100vw;
   height: 6rem;
   font-size: 1.4rem;
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -974,6 +982,9 @@ button:hover {
 }
 
 @media (orientation: portrait) {
+  .logooimg {
+    display: none;
+  }
   .crack2 {
     display: none;
   }
@@ -1190,3 +1201,38 @@ button:hover {
   }
 }
 /* ***************** */
+/* scroll-up */
+.scroll-up {
+  position: fixed;
+  filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
+    brightness(103%) contrast(105%);
+  opacity: 0;
+  cursor: default;
+  width: 5rem;
+  z-index: 999;
+  right: 5rem;
+  bottom: 7rem;
+  transition: opacity 0.4s, filter 0.4s;
+}
+.opacity {
+  opacity: 0.7 !important;
+  cursor: pointer;
+}
+.scroll-up:hover {
+  filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
+    brightness(1.4) contrast(105%);
+}
+.scroll-up:active {
+  animation: button-pop 0.3s ease-out;
+}
+@keyframes button-pop {
+  0% {
+    transform: scale(0.94);
+  }
+  40% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
