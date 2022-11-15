@@ -13,14 +13,22 @@ html {
   font-family: "rubik", sans-serif;
   overflow-x: hidden !important;
 }
-.crack {
+.crack,
+.crack2 {
   position: absolute;
   right: -15rem;
   top: -9rem;
   z-index: -1000;
   width: 70rem;
   transform: rotateZ(2deg);
+  filter: invert(23%) sepia(90%) saturate(7204%) hue-rotate(357deg)
+    brightness(104%) contrast(115%);
 }
+.crack2 {
+  left: -15rem;
+  transform: scaleX(-1);
+}
+
 .shape__bg {
   position: fixed;
   width: 100%;
@@ -966,6 +974,9 @@ button:hover {
 }
 
 @media (orientation: portrait) {
+  .crack2 {
+    display: none;
+  }
   @keyframes floatNew {
     from {
       transform: translateY(-3.5rem);
