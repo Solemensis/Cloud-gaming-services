@@ -690,7 +690,7 @@ button:hover {
   opacity: 0.8;
 }
 .tablet {
-  width: 45rem !important;
+  width: 49rem !important;
   opacity: 0.7;
   filter: invert(38%) sepia(88%) saturate(417%) hue-rotate(84deg)
     brightness(103%) contrast(80%);
@@ -738,8 +738,8 @@ button:hover {
   /* object-fit: fill; */
 }
 .video3 {
-  width: 34.5rem;
-  height: 20.9rem;
+  width: 37.6rem;
+  height: 22.7rem;
   left: 11%;
   top: 16.4%;
   border-radius: 0.6rem;
