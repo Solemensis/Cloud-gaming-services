@@ -38,9 +38,7 @@ html {
   opacity: 0.3;
   z-index: -10000000000;
 }
-.tomb {
-  height: 24rem !important;
-}
+
 .shape__small,
 .shape__big {
   position: absolute;
@@ -436,13 +434,15 @@ button:hover {
 }
 
 .cards img {
-  height: 19rem;
+  height: 21rem;
 
   margin-bottom: 3rem;
 }
-
+.tomb {
+  height: 25rem !important;
+}
 .knife {
-  height: 17rem !important;
+  height: 18rem !important;
 }
 .cards h3 {
   font-weight: 500;
