@@ -1205,22 +1205,24 @@ button:hover {
 .scroll-up {
   position: fixed;
   filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
-    brightness(103%) contrast(105%);
-  opacity: 0;
+    brightness(70%) contrast(105%);
+  /* opacity: 0; */
   cursor: default;
   width: 5rem;
   z-index: 999;
   right: 5rem;
   bottom: 7rem;
-  transition: opacity 0.4s, filter 0.4s;
+  transition: transform 0.2s, filter 0.4s;
+
+  transform: translateY(13rem);
 }
 .opacity {
-  opacity: 0.7 !important;
+  transform: translateY(0);
   cursor: pointer;
 }
 .scroll-up:hover {
   filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
-    brightness(1.4) contrast(105%);
+    brightness(90%) contrast(105%);
 }
 .scroll-up:active {
   animation: button-pop 0.3s ease-out;
