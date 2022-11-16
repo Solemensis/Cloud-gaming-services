@@ -14,7 +14,7 @@ const scrollUp = document.querySelector(".scroll-up");
 
 const stickyScrollUp = function (entries) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
   if (!entry.isIntersecting) scrollUp.classList.add("opacity");
   else scrollUp.classList.remove("opacity");
 };
