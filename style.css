@@ -1204,8 +1204,7 @@ button:hover {
 /* scroll-up */
 .scroll-up {
   position: fixed;
-  filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
-    brightness(70%) contrast(105%);
+
   /* opacity: 0; */
   cursor: default;
   width: 5rem;
@@ -1213,16 +1212,14 @@ button:hover {
   right: 5rem;
   bottom: 7rem;
   transition: transform 0.2s, filter 0.4s;
-
-  transform: translateY(13rem);
+  transform: translateY(14rem);
 }
 .opacity {
   transform: translateY(0);
   cursor: pointer;
 }
 .scroll-up:hover {
-  filter: invert(32%) sepia(38%) saturate(5050%) hue-rotate(1deg)
-    brightness(90%) contrast(105%);
+  filter: brightness(1.2);
 }
 .scroll-up:active {
   animation: button-pop 0.3s ease-out;
