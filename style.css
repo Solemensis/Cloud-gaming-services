@@ -476,9 +476,20 @@ button:hover {
 }
 
 .info-heading {
-  /* font-family: "Patrick Hand SC";
-  font-size: 3.1rem !important;
-  font-weight: 800; */
+  position: relative;
+
+  margin: 0 auto;
+}
+.info-heading::before {
+  content: "";
+  position: absolute;
+  background: url("images/hat-ico.svg") no-repeat;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-size: 3.5rem;
+  /* display: block; */
+  left: -4.5rem;
+  top: -0.3rem;
 }
 .game-name1 {
   color: #6ddd17aa;
