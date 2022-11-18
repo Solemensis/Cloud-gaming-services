@@ -385,8 +385,8 @@ button {
   color: #eee;
   background-color: orangered;
   opacity: 0.8;
-  border-radius: 10rem;
-  font-size: 1.5rem;
+  border-radius: 0.6rem !important;
+
   font-weight: 600;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -483,13 +483,15 @@ button:hover {
 .info-heading::before {
   content: "";
   position: absolute;
-  background: url("images/hat-ico.svg") no-repeat;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-size: 3.5rem;
+  background: url("images/tick.svg") no-repeat;
+  filter: invert(48%) sepia(91%) saturate(541%) hue-rotate(73deg)
+    brightness(96%) contrast(88%);
+  height: 2.6rem;
+  width: 2.6rem;
+  background-size: 2.6rem;
   /* display: block; */
-  left: -4.5rem;
-  top: -0.3rem;
+  left: -3.5rem;
+  top: 0.3rem;
 }
 .game-name1 {
   color: #6ddd17aa;
@@ -774,7 +776,7 @@ button:hover {
 }
 
 .pricing-section h2 {
-  color: white;
+  color: #eee;
   text-align: center;
   font-size: 5rem;
   margin-bottom: 12rem;
@@ -798,9 +800,9 @@ button:hover {
 }
 
 .card {
-  color: white;
+  color: #eee;
 
-  background-color: #6c30db67;
+  background-color: #6c30db43;
   padding: 2rem 3rem;
   position: relative;
   border-radius: 1rem;
@@ -811,11 +813,11 @@ button:hover {
 }
 
 .card:last-child {
-  background-color: #e82c87cc;
+  background-color: #e82c877f;
 }
 
 .card1 {
-  background-color: #3ffe8f50;
+  background-color: #3ffe8f32;
 }
 .card h3 {
   font-size: 2.5rem;
@@ -828,6 +830,7 @@ button:hover {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: #bbb;
   list-style: none;
 }
 .card:last-child li::before {
@@ -854,6 +857,7 @@ button:hover {
   left: 48.5%;
   transform: translate(-50%, -50%);
   bottom: 16%;
+  color: #eee;
 }
 
 .card button {
@@ -864,6 +868,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 0%;
+  border-radius: 0.5rem;
 }
 
 .card button:hover {
@@ -1139,16 +1144,10 @@ button:hover {
     font-size: 4rem;
   }
   .navbar button {
-    border-radius: 0.7rem;
     height: 5rem;
     margin-top: 0.5rem;
   }
-  .navbar p {
-    font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .games-list {
     display: none;
   }
