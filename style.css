@@ -1011,9 +1011,6 @@ button:hover {
   }
 }
 
-.scroll-up {
-  transform: translateY(16rem) !important;
-}
 @media (orientation: portrait) {
   .logooimg {
     display: none;
@@ -1035,6 +1032,14 @@ button:hover {
   }
   html {
     font-size: 26%;
+  }
+  .scroll-up {
+    transform: translateY(16rem) !important;
+    width: 7rem !important;
+  }
+  .opacity {
+    transform: translateY(0) !important;
+    cursor: pointer;
   }
   .main {
     flex-direction: column;
