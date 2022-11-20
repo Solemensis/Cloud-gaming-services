@@ -1011,6 +1011,9 @@ button:hover {
   }
 }
 
+.scroll-up {
+  transform: translateY(16rem) !important;
+}
 @media (orientation: portrait) {
   .logooimg {
     display: none;
@@ -1122,7 +1125,7 @@ button:hover {
     font-size: 8rem !important;
   }
   .tonight-text {
-    font-size: 10rem !important;
+    font-size: 9rem !important;
   }
   .main-text button {
     width: clamp(27rem, 20vw, 35rem);
