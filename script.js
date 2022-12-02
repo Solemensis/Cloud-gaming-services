@@ -1,7 +1,6 @@
 "use strict";
 
 // **** website first-load opacity animation ****
-
 const heroSection = document.querySelector(".hero-section");
 
 window.onload = function () {
@@ -9,7 +8,6 @@ window.onload = function () {
 };
 
 // **** intersection observer to implement "scroll up" button ****
-
 const scrollUp = document.querySelector(".scroll-up");
 
 const stickyScrollUp = function (entries) {
