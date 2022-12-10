@@ -220,6 +220,13 @@ body {
   list-style: none;
   margin-left: 11rem;
 }
+.navbar a {
+  color: #dddddd;
+  transition: 0.2s;
+}
+.navbar a:hover {
+  color: #a70ee9;
+}
 .navbar ul li {
   font-family: "Patrick Hand SC";
   font-size: 2.4rem;
