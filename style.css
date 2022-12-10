@@ -6,7 +6,10 @@
   user-select: none;
   outline: none;
 }
-
+.download {
+  font-family: "Patrick Hand SC";
+  font-size: 2rem;
+}
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -208,10 +211,10 @@ body {
 }
 .navbar button {
   height: 4rem;
-  background-color: red;
+  background-color: rgb(130, 0, 0);
 }
 .navbar button:hover {
-  background-color: rgb(145, 0, 0);
+  background-color: rgb(117, 0, 0);
 }
 .navbar ul {
   display: flex;
