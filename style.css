@@ -357,6 +357,7 @@ a {
 .delivered {
   font-weight: 500;
   margin-top: 6rem;
+  margin-bottom: 0.8rem !important;
   color: #ddd;
 }
 
